@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "precios",
+  "info": {
+    "singularName": "precio",
+    "pluralName": "precios",
+    "displayName": "Precios"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "supermercado": {
+      "type": "string"
+    },
+    "precio": {
+      "type": "decimal"
+    },
+    "producto": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::producto.producto"
+    }
+  }
+}
